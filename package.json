@@ -1,6 +1,6 @@
 {
   "name": "react-native-update-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Integration of react-native application update functionality.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -43,9 +43,6 @@
     "url": "https://github.com/DeepRolling/react-native-update-toolkit.git/issues"
   },
   "homepage": "https://github.com/DeepRolling/react-native-update-toolkit.git#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
@@ -65,28 +62,21 @@
     "react-native": "0.63.4",
     "react-native-builder-bob": "^0.18.0",
     "release-it": "^14.2.2",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "react-native-code-push": "7.0.0",
+    "dianvo-native-android-xupdate": "0.1.7"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-code-push": "7.0.0",
+    "dianvo-native-android-xupdate": "0.1.7"
   },
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   },
   "release-it": {
