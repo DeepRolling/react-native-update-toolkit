@@ -1,6 +1,6 @@
 {
   "name": "react-native-update-toolkit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Integration of react-native application update functionality.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -70,7 +70,7 @@
     "react": "*",
     "react-native": "*",
     "react-native-code-push": "7.0.0",
-    "dianvo-native-android-xupdate": "^0.1.7"
+    "react-native-android-xupdate": "^0.1.7"
   },
   "jest": {
     "preset": "react-native",

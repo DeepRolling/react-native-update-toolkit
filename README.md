@@ -7,7 +7,7 @@ Integration of react-native application update functionality.
 ```sh
 yarn add react-native-update-toolkit
 # this project depends on others two project, install them by command :
-yarn add react-native-code-push dianvo-native-android-xupdate
+yarn add react-native-code-push react-native-android-xupdate
 ```
 
 ## Usage
