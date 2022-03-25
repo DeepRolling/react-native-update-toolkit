@@ -1,5 +1,6 @@
 import { xupdateInitParamsRef } from './information';
 import { notInitializeError } from './initializer';
+import type { UpdateEntity } from 'react-native-android-xupdate';
 
 export enum UpdateStateType {
   /**
@@ -48,7 +49,7 @@ export const customParser = (json: any) => {
       updateContent:
         'fuck the update , because he force me fill these content.',
       downloadUrl: 'fuck the update apk',
-    };
+    } as UpdateEntity;
   }
   //if state have version , represent should update
   let hasUpdate =
@@ -80,5 +81,5 @@ export const customParser = (json: any) => {
     isIgnorable: isIgnorable,
     apkSize: apkSize,
     apkMd5: apkMd5,
-  };
+  } as UpdateEntity;
 };

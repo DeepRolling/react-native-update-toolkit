@@ -3738,11 +3738,6 @@ detect-node@^2.0.4:
   resolved "http://192.168.1.198:4873/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
-dianvo-native-android-xupdate@0.1.7:
-  version "0.1.7"
-  resolved "http://192.168.1.198:4873/dianvo-native-android-xupdate/-/dianvo-native-android-xupdate-0.1.7.tgz#1980e4f2e00eccb0261375ff3c17334f520f797a"
-  integrity sha512-aa6oJCeXYn3Qz/tDVahDpYK7pkCURdkGlU9ecKt5GNRlzU1QBfkeTRLeG6Ks7WweWF0EyTM5oitjVuWyXmFXEw==
-
 diff-sequences@^26.6.2:
   version "26.6.2"
   resolved "http://192.168.1.198:4873/diff-sequences/-/diff-sequences-26.6.2.tgz#48ba99157de1923412eed41db6b6d4aa9ca7c0b1"
@@ -7978,6 +7973,11 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "http://192.168.1.198:4873/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-native-android-xupdate@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-android-xupdate/-/react-native-android-xupdate-0.2.0.tgz#4bf9e81a228be906ad8abff1f3d98c43a0abbd69"
+  integrity sha512-Qe0DVqyTm1BvlARoXWZ+GovQZPQpyiKAdOD/+M1/mjBrXcEU+hEvwAmKmM4Rq1O8PHhvYSQZY6BQiQXRLUATmQ==
 
 react-native-builder-bob@^0.18.0:
   version "0.18.2"

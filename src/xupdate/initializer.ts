@@ -1,8 +1,7 @@
-// @ts-ignore
-import { XUpdate, InitArgs } from 'dianvo-native-android-xupdate/src';
 import { customParser } from './parser';
 import type { OriginXupdateInitialParams } from './information';
 import { injectWholeXupdateParams } from './information';
+import { InitArgs, XUpdate } from 'react-native-android-xupdate';
 
 export const notInitializeError = new Error(
   'Find you not call useXupdateInitializer yet , please initialize xupdate first'

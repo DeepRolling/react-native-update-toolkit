@@ -1,5 +1,4 @@
-// @ts-ignore
-import type { UpdateArgs } from 'dianvo-native-android-xupdate/src';
+import type { UpdateArgs } from 'react-native-android-xupdate';
 
 export type OriginXupdateInitialParams = {
   applicationId: string; //android applicationId config in  build.gradle
@@ -16,7 +15,9 @@ export type XUpdateInitialParamsWithUpdateServiceUrl =
 let xupdateInitParamsRef: XUpdateInitialParamsWithUpdateServiceUrl | null =
   null;
 
-function injectWholeXupdateParams(params: XUpdateInitialParamsWithUpdateServiceUrl) {
+function injectWholeXupdateParams(
+  params: XUpdateInitialParamsWithUpdateServiceUrl
+) {
   xupdateInitParamsRef = params;
 }
 

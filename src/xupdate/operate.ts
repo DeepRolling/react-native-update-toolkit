@@ -1,5 +1,4 @@
-// @ts-ignore
-import { UpdateArgs, XUpdate } from 'dianvo-native-android-xupdate/src';
+import { UpdateArgs, XUpdate } from 'react-native-android-xupdate';
 import { xupdateInitParamsRef } from './information';
 import { notInitializeError } from './initializer';
 import { customParser } from './parser';
@@ -69,9 +68,9 @@ export function displayUpdateDialogIfHaveUpdate() {
       ? 'xupdate_background_top'
       : params.updateArgs.topImageRes;
   args.widthRatio =
-    params.updateArgs?.topImageRes === undefined
+    params.updateArgs?.widthRatio === undefined
       ? 0.8
-      : params.updateArgs.topImageRes;
+      : params.updateArgs.widthRatio;
   console.log('xupdate request params : ' + JSON.stringify(args));
   XUpdate.update(args);
 }
