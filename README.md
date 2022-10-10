@@ -1,18 +1,36 @@
 # react-native-update-toolkit
 
-Integration of react-native application update functionality.
+This library used to implement update functionality in react-native application.
+
+In Android side, I use codepush and xpdate to get things work.
+
+In IOS side, things become complicated, there not have a method to just download install package and notice user
+override the old application as they do in Android side. Due to user only can update application from App Store.
+
+So I offer a function to check if there have newer version in App Store, so you need implement your own notice
+window(or other manner) and bridge it with update lint hook which provided by this library.
 
 ## Installation
 
-```sh
-yarn add react-native-update-toolkit
-# this project depends on others two project, install them by command :
-yarn add react-native-code-push react-native-android-xupdate
+This toolkit depends on some libraries. So you need install them first :
+```shell
+yarn add react-native-code-push react-native-android-xupdate react-native-update-toolkit
 ```
+> Notice : official react-native-code-push library call some function during initialize which will violate
+> the privacy rules enacted by application store. So I make a patch to solve this problem, you can use following
+> package :
+>
+> "react-native-code-push": "git+ssh://git@gitee.com:deepcodestudio/gitpkg-repository.git#react-native-code-push-v7.0.5-gitpkg-fix"
+
+After that, you also need some steps to reach the end point.
+
+[config react-native-code-push in android side](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md#plugin-installation-and-configuration-for-react-native-060-version-and-above-android)
+
+[How to change background of xupdate update notice window](https://github.com/xuexiangjys/react-native-xupdate)
 
 ## Usage
 
-step1 : declare update service
+step1 : declare update service·
 ```typescript
 import {ApplicationUpdateService} from 'react-native-update-toolkit';
 import {isAndroid} from 'react-native-deepcode-toolkit/src/utils/ui/systemSpec';
